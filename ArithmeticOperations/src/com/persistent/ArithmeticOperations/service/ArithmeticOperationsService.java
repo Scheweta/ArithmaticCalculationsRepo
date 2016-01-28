@@ -1,8 +1,10 @@
 package com.persistent.ArithmeticOperations.service;
 
+import com.persistent.ArithmeticOperations.exceptions.InvalidInputException;
+
 public interface ArithmeticOperationsService {
 	
-	public void primeNumbers(int num);
+	public void primeNumbers(int num) throws InvalidInputException;
 	
 	public int factorial(int number);
 	

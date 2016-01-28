@@ -1,6 +1,6 @@
 package com.persistent.ArithmeticOperations.exceptions;
 
-public class InvalidInputException {
+public class InvalidInputException extends Exception{
 
 	InvalidInputException(String msg){
 		

@@ -1,5 +1,6 @@
 package com.persistent.ArithmeticOperations.serviceImpl;
 
+import com.persistent.ArithmeticOperations.exceptions.InvalidInputException;
 import com.persistent.ArithmeticOperations.service.ArithmeticOperationsService;
 
 public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
@@ -16,7 +17,7 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 
 	//---------generate prime numbers between 1 and num-----------
 	
-	public void primeNumbers(int number) {
+	public void primeNumbers(int number) throws InvalidInputException{
 		
 		int start=2, end=number, counter=0; 
 		boolean isPrime;
