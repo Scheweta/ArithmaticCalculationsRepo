@@ -4,7 +4,7 @@ import com.persistent.ArithmeticOperations.exceptions.InvalidInputException;
 
 public interface ArithmeticOperationsService {
 	
-	public void primeNumbers(int num) throws InvalidInputException;
+	public void primeNumbers(int num);
 	
 	public int factorial(int number);
 	

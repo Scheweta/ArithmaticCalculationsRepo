@@ -17,10 +17,18 @@ public class ArithmeticOperationsImpl implements ArithmeticOperationsService{
 
 	//---------generate prime numbers between 1 and num-----------
 	
-	public void primeNumbers(int number) throws InvalidInputException{
+	public void primeNumbers(int number){
 		
 		int start=2, end=number, counter=0; 
 		boolean isPrime;
+		try{
+		if(number<3)
+			throw new InvalidInputException("Prime Number: Invalid Input error :  Please provide a number greater than 1");
+		}
+		catch(InvalidInputException ex){
+			System.out.println(ex.getMessage());
+			return;
+		}
 		
 		System.out.print("Prime numbers between 1 and "+number+" :");
 		
